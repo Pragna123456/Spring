@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+<bean class="com.sathya.collection4.MarignBean" id="id1">
+        <property name="marginId" value="10021" />
+        <property name="marginCode" value="ABCD" />
+    </bean>
+
+    <bean class="com.sathya.collection4.ModelBean" id="id2">
+        <property name="modelId" value="3124" />
+        <property name="modelCode" value="Ayfr" />
+        <property name="modelPrice" value="564.0" />
+        <property name="marginmgOb">
+            <map>
+                <entry key="id1" value-ref="id1" />
+            </map>
+        </property>
+    </bean>
+
+    <bean class="com.sathya.collection4.ProductBean" id="id3">
+        <property name="productId" value="3241" />
+        <property name="productName" value="choco" />
+        <property name="modelObjs">
+            <list>
+                <ref bean="id2" />
+            </list>
+        </property>
+    </bean>
+</beans>
