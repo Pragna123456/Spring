@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans  
+    xmlns="http://www.springframework.org/schema/beans"  
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  
+    xmlns:p="http://www.springframework.org/schema/p"  
+    xsi:schemaLocation="http://www.springframework.org/schema/beans  
+               http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">  
+  <bean class="com.sathya.SathyaCollegeBean" id="id1">
+  <property name="studentNames">
+  <list>
+  <value>tarun</value>
+  <value>naveen</value>
+  <value>rushi</value>
+  <value>hafeez</value>
+  </list>
+  </property>
+  <property name="studentRolls">
+  <set>
+  <value>101</value>
+  <value>121</value>
+  <value>324</value>
+  <value>453</value>
+ </set>
+  </property>
+  <property name="branchdetails">
+  <map>
+  <entry key="cse" value="120"></entry>
+    <entry key="eee" value="188"></entry>
+    <entry key="it" value="150"></entry>
+       <entry key="bsc" value="520"></entry>  
+  </map> 
+  </property>
+  <property name="branchInfos">
+  <props>
+  <prop key="cse">yakub</prop>
+    <prop key="eee">ratan</prop>
+    <prop key="it">babu</prop>
+    <prop key="bsc">sravan</prop>
+    </props>
+    </property>
+  </bean>
+  </beans>
