@@ -1,0 +1,1 @@
+<h1 style="color: aqua">register page opened</h1>
